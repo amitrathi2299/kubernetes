@@ -1,0 +1,21 @@
+# Method 2: Declarative (YAML file)
+# mkdir nginx
+# ls
+# nginx
+# cd nginx/
+
+# create file
+# vim namespace.yml
+
+
+# # Create file: nginx-ns.yaml
+# cat > nginx-ns.yaml << EOF
+
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: nginx
+# EOF
+
+# # Apply it
+# kubectl apply -f nginx-ns.yaml	#create and update

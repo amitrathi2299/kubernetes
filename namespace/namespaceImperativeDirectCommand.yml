@@ -1,0 +1,12 @@
+# Method 1: Imperative (Direct command)
+# kubectl create namespace nginx
+kubectl create ns nginx          # Short form
+
+# kubectl run nginx --image=nginx
+
+# kubectl run nginx --image=nginx -n nginx
+
+# pod/nginx created
+
+# kubectl delete pod nginx
+
